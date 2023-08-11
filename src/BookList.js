@@ -9,7 +9,7 @@ function BookList() {
   
     useEffect(() => {
       axios
-        .get('http://localhost:5000')
+        .get('https://vietanh300355676backend.onrender.com/')
         .then((res) => {
           setBooks(res.data);
         })
@@ -20,7 +20,7 @@ function BookList() {
   
     const deleteBook = id => {
         axios
-          .delete('http://localhost:5000/' + id)
+          .delete('https://vietanh300355676backend.onrender.com/' + id)
           .then(response => {
             console.log(response.data);
           })
